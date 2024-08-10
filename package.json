@@ -1,0 +1,21 @@
+{
+  "name": "api_test_pw",
+  "version": "1.0.0",
+  "description": "API Test Automation",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LFCG",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.46.0",
+    "@types/node": "^22.2.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

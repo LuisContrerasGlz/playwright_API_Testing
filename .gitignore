@@ -1,0 +1,27 @@
+# Ignore .env files (where you store secrets)
+.env
+
+# Ignore any other files that might contain secrets or sensitive information
+*.env
+*.local
+*.env.local
+.env.*.local
+
+# Ignore node_modules directory (common in JavaScript/TypeScript projects)
+node_modules/
+
+# Ignore logs
+logs
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE-specific files (e.g., for VSCode)
+.vscode/
+.idea/
+
+# Ignore build output directories
+dist/
+build/
