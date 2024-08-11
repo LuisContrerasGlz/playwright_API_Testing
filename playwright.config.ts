@@ -43,11 +43,17 @@ export default defineConfig({
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
+    
     {
       name:'API Tests',
-      testMatch: 'APITests/**/*',
+      testMatch: 'APITests/**/*.spec.ts',
+      
       use:{
         baseURL:'https://api.github.com',
+        extraHTTPHeaders: {
+          'Accept': 'application/vnd.github.v3+json',
+          'Authorization':`token ${process.env.API_Token}`, 
+        }
       }
     }
   ],
