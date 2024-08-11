@@ -22,6 +22,7 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: 'https://api.github.com',
+    headless: true, 
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
@@ -46,7 +47,7 @@ export default defineConfig({
     
     {
       name:'API Tests',
-      testMatch: 'APITests/**/*.spec.ts',
+      testMatch: 'APITests/**/*',
       
       use:{
         baseURL:'https://api.github.com',
