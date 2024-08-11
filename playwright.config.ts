@@ -48,10 +48,6 @@ export default defineConfig({
       testMatch: 'APITests/**/*',
       use:{
         baseURL:'https://api.github.com',
-        extraHTTPHeaders: {
-          'Accept': 'application/vnd.github.v3+json',
-          'Authorization':`token ${process.env.API_Token}`, 
-        }
       }
     }
   ],
